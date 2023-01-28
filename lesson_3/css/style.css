@@ -1,0 +1,37 @@
+@import url(reset.css);
+
+a {
+  color: brown;
+}
+
+h2 {
+  color: blue;
+}
+
+h3 {
+  color: springgreen;
+}
+
+header p {
+  color: blueviolet;
+}
+
+.header__title {
+  color: red;
+}
+
+.history__block > p {
+  color: chocolate;
+}
+
+[class*="__block"] {
+  color: fuchsia;
+}
+
+.about__title ~ a {
+  color: slategrey;
+}
+
+#h-4 {
+  color: gold;
+}
