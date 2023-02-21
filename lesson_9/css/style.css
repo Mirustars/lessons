@@ -1,0 +1,88 @@
+@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:regular,700&display=swap);
+
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: #FF7020;
+  color: #212B36;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px 50px;
+}
+
+.header, 
+.main, 
+.footer {
+  margin-bottom: 60px;
+}
+
+.header {
+  padding-top: 50px;
+}
+
+[class*="__title"] {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.header__logos-block {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 0;
+}
+
+.header__logos-block img,
+.header__icons-block img{
+  vertical-align: middle;
+  transition: all 0.3s;
+}
+
+.header__logos-block img:hover,
+.header__icons-block img:hover {
+  transform: scale(1.2);
+}
+
+.header__logos-block img:not(:last-child),
+.header__icons-block img:not(:last-child) {
+  margin-right: 25px;
+}
+
+.header__icons-block {
+  text-align: center;
+  font-size: 0;
+}
+
+.main__images-block {
+  font-size: 0;
+  text-align: center;
+}
+
+.main__images-block img {
+  border-radius: 20px;
+  margin: 10px;
+  vertical-align: middle;
+  transition: all 0.3s;
+}
+
+.main__images-block img:hover {
+  transform: scale(1.05);
+}
+
+.footer__block {
+  max-width: 900px;
+  min-height: 400px;
+  background: url(../img/elements/lines.svg) 55% 85% no-repeat, url(../img/elements/Vector1.svg) 40% 20% no-repeat, url(../img/elements/Vector2.svg) 60% 20% no-repeat, url(../img/elements/shape.svg) 25% 70% no-repeat, url(../img/elements/Oval-2.svg) 75% 95% no-repeat, url(../img/elements/Oval.svg) 85% 95% no-repeat, url(../img/elements/ellipse.svg) 95% 5% no-repeat, url(../img/elements/dotted2.svg) 5% 5% no-repeat, url(../img/elements/dotted3.svg) 5% 40% no-repeat, url(../img/elements/dotted.svg) 5% 95% no-repeat, linear-gradient(180deg, #042695 0%, #3db4fd 100%);
+  border-radius: 15px;
+  margin: 0 auto;
+}
