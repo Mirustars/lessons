@@ -2,10 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:700&display=swap");
 
 
-/* body {
-  background: url(../img/bg.jpg) 0 0 / cover, no-repeat;
-} */
-
 
 .wrapper {
   overflow-x: clip;
@@ -249,10 +245,15 @@
 
 
 
+
 .section__battlefield {
   position: relative;
+}
+
+.section__war {
+  position: absolute;
   top: 700px;
-  left: 350px;
+  left: 350px
 }
 
 .section__wheels {
@@ -483,6 +484,7 @@
   z-index: 4;
 }
 
+
 .steel__all {
   content: '';
   width: 200px;
@@ -491,7 +493,7 @@
   border-radius: 30px;
   position: absolute;
   bottom: 15px;
-  right: 285px;
+  left: 685px;
   z-index: 4;
 }
 
@@ -721,6 +723,12 @@
   z-index: 30;
 }
 
+.section__metal {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 .metal__down {
   content: '';
   width: 230px;
@@ -728,7 +736,7 @@
   background-color: rgb(90, 145, 7);
   position: absolute;
   bottom: 55px;
-  right: 360px;
+  left: 580px;
 }
 
 .metal__middle {
@@ -738,7 +746,7 @@
   background-color: #3e6b00;
   position: absolute;
   bottom: 135px;
-  right: 360px;
+  left: 580px;
 }
 
 .gun__line {
@@ -755,12 +763,12 @@
 
 .metal__top {
   content: '';
-  width: 570px;
+  width: 570px; 
   height: 100px;
   background-color: #3e6b00;
   position: absolute;
   bottom: 185px;
-  right: 430px;
+  left: 170px;
 }
 
 .metal__right {
@@ -771,7 +779,7 @@
   border-radius: 40px;
   position: absolute;
   bottom: 270px;
-  right: 430px;
+  left: 290px;
 }
 
 .metal__left {
@@ -843,7 +851,7 @@
   transform: rotate(90deg);
   position: absolute;
   bottom: 138px;
-  right: 490px;
+  left: 500px;
   z-index: 6;
 }
 
@@ -855,7 +863,7 @@
   border-radius: 40px;
   position: absolute;
   bottom: 120px;
-  right: 500px;
+  left: 590px;
   z-index: 6;
 }
 
@@ -867,7 +875,7 @@
   border-radius: 20px;
   position: absolute;
   bottom: 50px;
-  right: 330px;
+  left: 835px;
 }
 
 .flag__blue {
