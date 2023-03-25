@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>lesson 16</title>
+</head>
+<body>
+  
+  <div class="wrapper">
+    <main class="page">
+      <div class="page__container">
+
+      <form class="page__form form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <div class="form__title title">Shipping Address</div>
+        <div class="form__input-login">
+          <div class="form__input-box email-box">
+            <label for="email">Email Address
+              <span class="form__star">*</span>
+            </label>
+            <input required id="email" name="email" type="email"
+            placeholder="roni_cost@example.com">
+          </div>
+          <div class="form__input-box pass-box">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password">
+          </div>
+          <div class="form__input-box zip-box">
+            <label for="zip">Zip/Postal Code</label>
+            <input id="zip" name="zip" type="text">
+          </div>
+        </div>
+        <div class="form__text">You already have an account with us. Sign in or continue as guest.</div>
+        <div class="form__buttons">
+          <button class="form__login-btn btn-black">login</button>
+          <button class="form__forgot-btn">Forgot Your Password?</button>
+        </div>
+      </form>
+
+
+      <form class="page__form form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <div class="form__register">
+          <div class="form__input-box first-name">
+            <label for="first-name">First name<span class="form__star">*</span></label>
+            <input id="first-name" type="text" name="first-name" required>
+          </div>
+          <div class="form__input-box last-name">
+            <label for="last-name">Last name<span class="form__star">*</span></label>
+            <input id="last-name" type="text" name="last-name" required>
+          </div>
+          <div class="form__input-box company">
+            <label for="company-name">Company</label>
+            <input id="company-name" type="text" name="company-name">
+          </div>
+          <div class="form__input-box address">
+            <label for="address">Street Address<span class="form__star">*</span></label>
+            <div class="address__input">
+              <input required id="address" type="text" name="address">
+              <input type="text" name="address">
+              <input type="text" name="address">
+            </div>
+          </div>
+          <div class="form__input-box country">
+            <label for="country">Country<span class="form__star">*</span></label>
+            <input required id="country" type="text" name="country">
+          </div>
+          <div class="form__input-box state">
+            <label for="state">State/Province<span class="form__star">*</span></label>
+            <select required class="state__list" name="State/Province" id="state">
+              <option value="" class="state__hidden" selected>Please select a region, state or province</option>
+              <option value="Kyivska">Kyivska</option>
+              <option value="Ternopilska">Ternopilska</option>
+              <option value="Odeska">Odeska</option>
+              <option value="Lvivska">Lvivska</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form__product-type type">
+          <div class="type__title title">Shipping Methods</div>
+          <div class="type__wrapp">
+            <div class="type__column">
+              <div class="type__row">
+                <input id="fixed" checked type="radio" name="type-of-product" value="type">
+                <label for="fixed">$5.00</label>
+                <div class="type__option">
+                  <div class="type__text">Fixed</div>
+                  <div class="type__text">Flat Rate</div>
+                </div>
+              </div>
+            </div>
+            <div class="type__column">
+              <div class="type__row">
+                <input id="table" type="radio" name="type-of-product" value="type">
+                <label for="table">$10.00</label>
+                <div class="type__option">
+                  <div class="type__text">Table Rate</div>
+                  <div class="type__text">Best Way</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__buttons-next">
+          <button class="form__button btn-black">Next</button>
+          <button class="form__button-back">Back</button>
+        </div>
+      </form>
+
+
+      <div class="page__checkout checkout">
+        <form class="checkout__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <div class="checkout__title">Billing Details</div>
+          <div class="checkout__wrapp">
+            <div class="checkout__row">
+              <div class="checkout__input-box">
+                <input required placeholder="First name*" name="first-name" type="text">
+              </div>
+              <div class="checkout__input-box">
+                <input required placeholder="Last name*" name="last-name" type="text">
+              </div>
+            </div>
+            <div class="checkout__row">
+              <div class="checkout__input-box">
+                <input required placeholder="Address*" name="address" type="text">
+              </div>
+              <div class="checkout__input-box">
+                <input placeholder="Address line 2" name="Address-2" type="text">
+              </div>
+            </div>
+            <div class="checkout__row">
+              <div class="checkout__input-box">
+                <select required class="checkout__select" name="Country">
+                  <option selected value="" class="checkout__hidden">Country*</option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Canada">Canada</option>
+                </select>
+              </div>
+              <div class="checkout__input-box">
+                <input required placeholder="City/Town*" name="city" type="text">
+              </div>
+            </div>
+            <div class="checkout__row">
+              <div class="checkout__input-box">
+                <input required placeholder="Postcode / ZIP*" name="postcode" type="text">
+              </div>
+              <div class="checkout__input-box">
+                <input required placeholder="Phone*" name="phone" type="tel">
+              </div>
+            </div>
+            <div class="checkout__row">
+              <div class="checkout__input-box">
+                <input required placeholder="Postcode / ZIP*" name="postcode" type="text">
+              </div>
+              <div class="checkout__input-box">
+                <input required placeholder="Phone*" name="phone" type="tel">
+              </div>
+            </div>
+            <textarea class="checkout__message" placeholder="Additional information" name="message"></textarea>
+          </div>
+
+          <div class="checkout__radio">
+            <div class="checkout__inner checkout__inner--checkbox">
+              <input class="checkout__check" value="yes" id="account" checked type="checkbox">
+              <label class="checkout__label" for="account">Create Account</label>
+            </div>
+          
+            <div class="checkout__inner checkout__inner--checkbox">
+              <input class="checkout__check" value="yes" id="ship" type="checkbox">
+              <label class="checkout__label" for="ship">Ship to a different address?</label>
+            </div>
+          </div>
+
+          <div class="checkout__discount discount">
+            <div class="discount__title">Apply Coupon to get discount!</div>
+            <div class="discount__wrapp">
+              <input placeholder="Coupon code" type="text">
+              <button class="discount__button" type="button">Apply Code</button>
+            </div>
+          </div>
+          
+          <div class="checkout__submit">
+            <button type="submit" class="checkout__order-btn">Place an Order</button></div>
+        </form>
+      </div>
+
+      </div>
+    </main>
+  </div>
+
+
+</body>
+</html>
